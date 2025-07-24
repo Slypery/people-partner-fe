@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { LogoLight } from "@/components/Logo";
 import TransitionLink from "@/components/TransitionLink";
 
@@ -5,7 +6,7 @@ function DefaultLayout({ children }) {
     return (
         <main id="adminLayout" data-animate="enter" className="@container/main flex flex-col items-center [&>div]:max-w-7xl h-screen max-h-screen overflow-auto bg-base-200 bg-stripe-diagonal scrollbar-thin scrollbar-track-white/0 scrollbar-thumb-accent stripe-color-base-300/30 fade-in fade-out" style={{ scrollbarGutter: 'stable' }}>
             <div className="top-0 z-10 sticky flex mb-4 px-2 w-full bg-gradient-to-b from-30% from-base-200">
-                <nav className="flex items-center mx-4 px-4 border-primary/10 rounded-[var(--radius-box)] w-full min-h-16 bg-base-100/90 shadow shadow-black/10 backdrop-blur-sm translate-y-4" style={{ borderWidth: 'var(--border)' }}>
+                <nav className="flex items-center mx-4 px-4 border-primary/10 rounded-box w-full min-h-16 bg-base-100/90 shadow shadow-black/10 backdrop-blur-sm translate-y-4" style={{ borderWidth: 'var(--border)' }}>
 
                     {/* dropdown navigation links when screen width is below lg (64rem) */}
                     <div className="dropdown">
@@ -70,7 +71,7 @@ function DefaultLayout({ children }) {
                                             <details>
                                                 <summary>Master Admin</summary>
                                                 <ul>
-                                                    <li><TransitionLink href="/admin/dashboard">Dashboard</TransitionLink></li>
+                                                    <li><TransitionLink href="/admin">Dashboard</TransitionLink></li>
                                                     <li><TransitionLink href="/admin/desain-perusahaan">Desain Perusahaan</TransitionLink></li>
                                                 </ul>
                                             </details>
@@ -163,7 +164,7 @@ function DefaultLayout({ children }) {
                                         <details>
                                             <summary>Master Admin</summary>
                                             <ul>
-                                                <li><TransitionLink href="/admin/dashboard">Dashboard</TransitionLink></li>
+                                                <li><TransitionLink href="/admin">Dashboard</TransitionLink></li>
                                                 <li><TransitionLink href="/admin/desain-perusahaan">Desain Perusahaan</TransitionLink></li>
                                             </ul>
                                         </details>
@@ -192,18 +193,12 @@ function DefaultLayout({ children }) {
 
                     {/* miscellaneous */}
                     <div className="ml-auto">
-                        <button className="btn btn-primary">Button</button>
+                        <button className="btn btn-primary">Logout</button>
                     </div>
 
                 </nav>
             </div>
-            <div className="breadcrumbs text-sm w-full px-8 pt-1 shrink-0">
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Documents</a></li>
-                    <li>Add Document</li>
-                </ul>
-            </div>
+            <Breadcrumbs />
             {children}
         </main>
     );

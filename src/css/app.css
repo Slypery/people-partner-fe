@@ -41,6 +41,10 @@
     --noise: 0;
 }
 
+.def-border-w {
+    border-width: var(--border);
+}
+
 .btn {
     border-start-start-radius: var(--join-ss, var(--radius-field));
     border-start-end-radius: var(--join-se, var(--radius-field));
