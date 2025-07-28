@@ -1,11 +1,11 @@
 'use client';
 import TransitionLink, { navigateTo } from "@/components/TransitionLink";
 
-function DesainPerusahaanStep5Page() {
+function DesainPerusahaanStep4Page() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // handle submit here
-        navigateTo('step-6');
+        navigateTo('step-5');
     }
     return (
         <form onSubmit={handleFormSubmit} data-transition-page data-animate="enter" className="pr-8 py-4 pl-14 w-full gap-x-3 gap-y-2 grid grid-cols-[auto_1fr] max-md:grid-cols-1 fade-in-up fade-out-up">
@@ -87,7 +87,7 @@ function DesainPerusahaanStep5Page() {
                 </div>
             </div>
             <div className="justify-end card-actions col-span-full">
-                <TransitionLink href="step-4" className="btn btn-info">
+                <TransitionLink href="step-2" className="btn btn-info">
                     Kembali
                 </TransitionLink>
                 <button className="btn btn-success">
@@ -98,4 +98,4 @@ function DesainPerusahaanStep5Page() {
     );
 }
 
-export default DesainPerusahaanStep5Page;
+export default DesainPerusahaanStep4Page;
