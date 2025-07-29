@@ -26,10 +26,10 @@ function DesainPerusahaanStep4Page() {
                 </div>
             </div>
             <div className="card-body md:mx-auto min-w-[300px] md:w-3/6">
-                <div className="bg-blue-500 text-white py-2 rounded-t-md">
+                <div className="bg-primary text-primary-content py-2 rounded-md">
                     <h3 className="text-lg text-center font-semibold">Nama Perusahaan</h3>
                 </div>
-                <div className="border border-blue-500 rounded-lg flex-1 p-4">
+                <div className="rounded-lg flex-1 p-4">
                     <div className="border-b border-gray-200 mb-2 pb-2">
                         <label className="flex items-center gap-2">
                             <input type="checkbox" className="checkbox checkbox-primary" />
