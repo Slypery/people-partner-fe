@@ -1,5 +1,5 @@
 'use client';
-import TransitionLink, {navigateTo} from "@/components/TransitionLink";
+import TransitionLink, { navigateTo } from "@/components/TransitionLink";
 import { useState } from "react";
 
 function DesainPerusahaanStep1Page() {
