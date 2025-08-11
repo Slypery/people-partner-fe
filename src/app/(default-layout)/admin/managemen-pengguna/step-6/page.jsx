@@ -2,7 +2,7 @@
 import TransitionLink, { navigateTo } from "@/components/TransitionLink";
 import { useState } from "react";
 
-function ManagemenPenggunaStep3Page() {
+function ManagemenPenggunaStep6Page() {
     const [RadioValue, setRadioValue] = useState('false');
     const handleRadioChange = (event) => {
         setRadioValue(event.target.value);
@@ -11,12 +11,12 @@ function ManagemenPenggunaStep3Page() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // handle submit here
-        navigateTo('step-4');
+        navigateTo('step-5');
     }
 
     return (
         <form onSubmit={handleFormSubmit} data-transition-page data-animate="enter" className="gap-4 grid grid-cols-1 @max-6xl/main:grid-cols-1 px-8 py-4 fade-in-up fade-out-up">
-            <h1 className="col-span-full font-semibold text-3xl flex gap-2 uppercase">Akuntabilitas Pengguna  (SG HR) - Modul Layanan Mandiri Pekerja</h1>
+            <h1 className="col-span-full font-semibold text-3xl flex gap-2 uppercase">Akuntabilitas Pengguna (SG HR) - Modul Hubungan Industrial</h1>
             <div className="flex flex-col w-full gap-2">
                 <div className="mb-4 space-y-3">
                     <div className="grid lg:grid-cols-5 grid-cols-2">
@@ -29,26 +29,10 @@ function ManagemenPenggunaStep3Page() {
                     </div>
                     <div className="grid lg:grid-cols-5 grid-cols-2">
                         <div className="grid-cols-1">
-                            <h4>DEPARTEMEN</h4>
+                            <h4>DIVISI</h4>
                         </div>
-                        <div className="grid-cols-1 flex">
-                            <h4>:&nbsp; </h4>
-                            <select name="" className="select" id="">
-                                <option className="select" value="">HR OPERATION</option>
-                                <option className="select" value="">HR OPERATION</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div className="grid lg:grid-cols-5 grid-cols-2">
                         <div className="grid-cols-1">
-                            <h4>SECTION</h4>
-                        </div>
-                        <div className="grid-cols-1 flex">
-                            <h4>:&nbsp; </h4>
-                            <select name="" className="select" id="">
-                                <option className="select" value="">HR OPERATION</option>
-                                <option className="select" value="">HR OPERATION</option>
-                            </select>
+                            <h4>: HUMAN RESOURCE</h4>
                         </div>
                     </div>
                 </div>
@@ -74,8 +58,8 @@ function ManagemenPenggunaStep3Page() {
                         </tr>
                         <tr>
                             <td className="px-4 py-2">1.</td>
-                            <td className="px-4 py-2">LAYANAN MANDIRI PEKERJA</td>
-                            <td className="px-4 py-2">MENGAJUKAN CUTI</td>
+                            <td className="px-4 py-2">HUBUNGAN INDUSTRIAL</td>
+                            <td className="px-4 py-2">UPLOAD PERATURAN PERUSAHAAN</td>
                             <td className="bg-blue-100 px-4 py-2 text-center">
                                 <input type="checkbox" />
                             </td>
@@ -97,8 +81,8 @@ function ManagemenPenggunaStep3Page() {
                         </tr>
                         <tr>
                             <td className="px-4 py-2">2.</td>
-                            <td className="px-4 py-2">LAYANAN MANDIRI PEKERJA</td>
-                            <td className="px-4 py-2">MENGAJUKAN CUTI</td>
+                            <td className="px-4 py-2">HUBUNGAN INDUSTRIAL</td>
+                            <td className="px-4 py-2">UPLOAD KEBIJAKAN TERBARU</td>
                             <td className="bg-blue-100 px-4 py-2 text-center">
                                 <input type="checkbox" />
                             </td>
@@ -120,8 +104,8 @@ function ManagemenPenggunaStep3Page() {
                         </tr>
                         <tr>
                             <td className="px-4 py-2">3.</td>
-                            <td className="px-4 py-2">LAYANAN MANDIRI PEKERJA</td>
-                            <td className="px-4 py-2">MENYETUJUI CUTI</td>
+                            <td className="px-4 py-2">HUBUNGAN INDUSTRIAL</td>
+                            <td className="px-4 py-2">MEMBUAT SURAT TEGURAN</td>
                             <td className="bg-blue-100 px-4 py-2 text-center">
                                 <input type="checkbox" />
                             </td>
@@ -143,8 +127,8 @@ function ManagemenPenggunaStep3Page() {
                         </tr>
                         <tr>
                             <td className="px-4 py-2">4.</td>
-                            <td className="px-4 py-2">LAYANAN MANDIRI PEKERJA</td>
-                            <td className="px-4 py-2">MENYETUJUI CUTI</td>
+                            <td className="px-4 py-2">HUBUNGAN INDUSTRIAL</td>
+                            <td className="px-4 py-2">MEMBUAT SURAT PERINGATAN</td>
                             <td className="bg-blue-100 px-4 py-2 text-center">
                                 <input type="checkbox" />
                             </td>
@@ -167,12 +151,12 @@ function ManagemenPenggunaStep3Page() {
                     </table>
                 </div>
             </div>
-            <div className="col-span-full flex gap-2 justify-end">
+            {/* <div className="col-span-full flex gap-2 justify-end">
                 <TransitionLink href="/admin" className="btn btn-info">Kembali</TransitionLink>
                 <button type="submit" className="btn btn-success">Simpan & Lanjut</button>
-            </div>
+            </div> */}
         </form>
     );
 }
 
-export default ManagemenPenggunaStep3Page;
+export default ManagemenPenggunaStep6Page;
